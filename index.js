@@ -1,11 +1,10 @@
 function breakOut(array, changeValue, stopValue) {
   for(let i = 0; i<array.length; i++){
     if(i===stopValue) {
-      break;
+      return(array);
     }
     array[i]=changeValue;
   }
-  return(array);
 }
 
 function keepGoing(array, changeValue, skipValue) {
@@ -16,4 +15,8 @@ function keepGoing(array, changeValue, skipValue) {
     array[i] = changeValue;
   }
   return(array);
+}
+
+function findBy(array, findFn) {
+  
 }
